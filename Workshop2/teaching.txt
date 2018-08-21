@@ -1,0 +1,37 @@
+Review last tutorial:
+	- Docker: Cannot install => Use the others => Grady will post every week
+
+Complexity
+	- Introduction: Last week some student pointed out
+	- Boring mathematical stuff: O(n)
+	- f(n) = 2n^2 + 9n + 1000 is O(n), O(n^2), O(n^3)
+	- Drop the lower order term + Forget the constant
+	- Small n growth -> we only care about big values of n in this case.
+	- Omega(n) Theta(n)
+	- Show the notebook problem (2.1) -> Show solution
+	- CS sense (O(n) is always Θ(n)) vs. Strict sense (O(n) not always Θ(n)) (Show problem 2.2)
+
+
+Data Structures
+	1st part:
+	- Abstract -> Focus on functionality that a data structure has. How it can be used. For example, an integer. We just know it is a number, and used for mathematical operation => No need for knowing the implementation of it
+	- Concrete -> Focus on how the data structure is actually implemented(like linked list)
+
+
+Memory Management
+	- Pointer: Pointer is every thing in computer science. Previously, we just work on
+ the top of the computer. For pointer, we can dive deeper into what is happening in the memory. 
+	- "Point" to a memory in computer (PointerBasic.c)
+	- Pointer has a value (is a memory) => Get the value by dereference
+		i.e. *a = 4
+	- malloc, realloc, free (memory.c)
+	- malloc: A computer will keep a fixed amount of memory for this pointer to 
+	do further operations. These memory are belong to this pointer, and it can freely access and put the value into these memory. The value of pointer a is the memory of the first block in the allocated memory for it. We can access more => illegal => can be kicked out 
+
+
+Data structures:
+	- Show Pointer (size) (size.c)
+		- Malloc, Realloc, Free
+	- Show the difference between 32 and 64 bit -> Come back to pointer Basic
+	- Struct
+	- Array 

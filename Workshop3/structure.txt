@@ -1,0 +1,93 @@
+# Week 4 Workshop Coverage
+### Data Structures
+* Importance: High
+* Time: About 15 minutes
+---
+* Arrays in C
+	- I'll probably start by asking about whether we know what a[1][4] means and
+	dig into the two possible meanings that way. But this part is somewhat low
+	priority and covered in the Workshop 2 Extra Notes.
+* Dynamic Arrays
+	- Insert
+	-- Unsorted - Complexity
+	-- Sorted - Complexity
+* Linked Lists
+	- Insert
+	-- Unsorted - Complexity
+	-- Sorted - Complexity
+* Binary Search Trees
+	- Insert
+	-- Complexity
+	- Moving into when a Binary Search Tree degenerates into a stick can 
+	probably be done at this point too.
+- I teach through these using paper strips and blue tack, the paper strips give
+	a clear hint to remind students about the differences (space) between the
+	dynamic arrays and the data structures with many allocations. It makes it
+	very clear how to bridge from linked lists to binary search trees.
+* Ternary Trees - Very very briefly, mention that we could have more than two
+	branches, and simply need to define how our values travel down the tree for
+	the extra branches.
+
+### AVL Trees - Depth and counter, rotations
+* Importance: High
+* Time: 10 minutes
+---
+* Depth and counter come up on the worksheet, so it's good to explain them at
+	least a little. The depth of a leaf is always -1 (or any other consistent 
+	value), and the depth of any parent is the largest depth of its two 
+	children + 1. Counter is used in dealing with a double rotation such as the
+	tree built from inserting 1 3 2.
+* Rotations come up for a lot of trees, so are important to cover, I find 
+	explaining it by swapping the middle element across to the other side works
+	well. Also mentioning the double check is to make sure the binary tree 
+	condition holds by running across the tree from left to right is something I
+	make sure to do.
+
+### Dereference Method
+* Importance: High
+* Time: 10 minutes
+---
+* The first step you might want to run through is 
+	+ asking what char * refers to, since the intuition is "a string" or "an array of characters", but the answer is that it points to a single character. Students are on good
+	footing with this from what I've seen this semester in my classes, but 
+	double checking and setting the scene is probably worth the brief detour.
+	+ I generally run through the example int (**example)[3] to see what it refers 
+	to. If you need to, you might want to quickly write up the R-L rule.
+
+## Lab
+### Valgrind + GDB Visualisation
+* Importance: Medium
+* Time: 10min
+---
+* Demoing how to see leaking memory is a good call as this is what is likely to
+	happen for a lot of students.
+[*] Showing how code visualisation can be done in GDB is a good idea, the 
+	on-screen keyboard works pretty well for this, but beware that when you 
+	minimize or close the keyboard, the computer might lock for 30s - 1min in my
+	experience. This particular part was covered in the solution videos, so 
+	isn't very high priority.
+	+ Show student a tree 4 5 6 4 3
+	+ Then try to free just one binary search tree
+	+ Show the remaining data structure
+
+### Binary Search Tree
+* Importance: High
+* Time: 65min
+---
+* Making it clear that the task for this week is writing a binary search tree
+	and inserting function is probably a good idea, as the end of the sheet says
+	"If you finish in time, try to maintain a balanced tree while inserting 
+	using rotations", so make sure students haven't accidentally missed the much
+	simpler instruction.
+[*] You might also want to write an in-order traversal function students can use
+	on the board to print out all the values in the tree. The problem has a tree
+	printing part which already runs, so this isn't all that important.
+[*] Students who haven't completed the extension tasks in week 2's workshop to 
+	build a linked list might find that an easier first step. You may also want
+	to recommend students reuse their code from week 2's fourth extension 
+	exercise. The scaffolding for this week's workshop probably makes this 
+	problem a lot easier, so this may still be true to some level, but you 
+	probably don't have to worry too much.
+* It may be worth reminding students that the scaffolding given can be split 
+	into files and compiled using a makefile, a good place to start might be 
+	when they hit a tricky error in the notebooks (or if they finish).

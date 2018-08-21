@@ -1,0 +1,75 @@
+# Week 5 Workshop Coverage
+### Tree Traversal
+* Importance: High
+* Time: About 5 - 10 minutes
+---
+Show notebook problems and results
+* In Order Traversal
+* Post Order Traversal
+* Pre Order Traversal
+I've found these can all be covered together by asking students how we can 
+traverse a tree and then moving onto the other methods. Generally this doesn't
+take too long unless students are stuck on it.
+
+### 2-3-4 Trees
+* Importance: Medium
+* Time: 15 minutes
+---
+* I usually run through with the example of 1,2,3,4,5,6,7,7,7,8, making it 
+	explicitly clear that we break up the tree on the way down. Also making it
+	clear that this has Θ(log n) insert behaviour is probably good and should be
+	relatively easy for students to understand based on what they know.
+
+### B+ Trees
+* Importance: Low
+* Time: 2 minutes
+---
+* This can usually be mentioned as an aside that just like you can have a node
+	with 2 - 4 pointers, you can also have a node with 256 pointers, and that
+	this data structure is useful in databases where a node can be processed 
+	quickly (in RAM) but following a node can be expensive (as it has to work
+	on the HDD which is a lot slower).
+
+### Stacks
+* Importance: High
+* Time: 5 minutes
+---
+* Showing that stacks are first in last out data structures and that they have
+	push (an item onto the stack) and pop (an item off the stack) operations is
+	probably plenty.
+
+### Queues
+* Importance: Medium
+* Time: 5 minutes
+---
+* Showing that queues are first in fast out data structures and that dequeue and
+	enqueue are the two functions, and highlighting that they can be implemented
+	using either circular arrays or linked lists is a good exercise.
+## Lab
+### Makefiles + Header Files
+* Importance: Medium
+* Time: 10min
+---
+* I've planned this year to take a regular .c file, split it into three bits and
+	use #includes to include those bits (I'm thinking of splitting the simple
+	hello world program into the early part, the end part and the hello world
+	part, including the hello world print function three times in a row), then 
+	moving on to this with function definitions. 
+	
+	-- Tying this in with a reminder of makefiles might be good motivation for 
+	why makefiles are useful for students, but as we'll have the videos this 
+	year to motivate an example better, it may be more useful to give time for 
+	the assignment.
+
+### Assignment
+* Importance: High
+* Time: 68min
+---
+* The programming exercises this week are about stacks, some students may have 
+	already finished writing their assignment program or might prefer to use the
+	workshop time to work on workshop problems. Nonetheless, you might find 
+	letting students work on whichever they like of the two is fine as the three
+	problems this week probably won't be too troublesome either.
+* Remind students that in the assignments their report should say what they're
+	trying to show, how they're going to show it, their experiments which 
+	support that, and discussion about those results.

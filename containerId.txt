@@ -1,0 +1,3 @@
+53b59650ddb6
+
+Docker exec 4b210f1980e0 jupyter notebook list
