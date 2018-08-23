@@ -1,6 +1,6 @@
-#ifndef b_h
-#define b_h
-
+#ifndef bcd
+#define bcd
+#include <stdio.h>
 void print2();
 
 #endif /* b_h */
