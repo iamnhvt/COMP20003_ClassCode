@@ -1,0 +1,25 @@
+
+I. Show the stack, solution to last week
+
+II. Hash function
+
+- A hash function is any function that can be used to map data of arbitrary size to data of a fixed size. The values returned by a hash function are called hash values, hash codes, digests, or simply hashes
+
+- Inserting 1,2,3,4,5 in an array, want to find if 5 does exists
+ => Go From 1 -> 5
+- However, a better solution is use an array called exists just take value 0,1
+	0 is false
+	1 is true
+- However, if the number if 100000000, we cannot define an array that has 1 billion elements
+-> We are using hash table
+
+- 14,30,17,55,31,29,16
+ 1. hash(x) of ( x % 13 ) (Linear Probing)
+ 2. - hash2(x) of ( x % 5 ) + 1 (Double hashing)
+    - linear probing is just double-hashing where hash2(x) = 1 always.
+ 3. Linear chaining
+ 4. Find a prime number to reduce the probability of collision
+
+
+III. Assignment
+- Cannot put the same name in the linked list in stage 2
