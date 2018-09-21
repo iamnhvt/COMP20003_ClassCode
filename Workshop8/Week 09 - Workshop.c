@@ -53,6 +53,8 @@ int main(int argc, char **argv) {
     //top_down_sort(a, n);
     //bottom_up_sort(a, n)
     
+    // You know you are correct when the two sorting functions produces the same sorted array
+    
     return 0;
     
     
